@@ -1,0 +1,11 @@
+server {
+  listen ${PORT} default_server;
+
+  # 기존 도메인/호스트명이 무엇이든 전부 새 사이트로 301 리다이렉트
+  server_name _;
+
+  # 목적지 URL은 환경변수로 주입합니다 (예: https://new.example.com)
+  return 301 ${REDIRECT_TO}$request_uri;
+}
+
+

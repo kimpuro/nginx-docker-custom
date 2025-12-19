@@ -1,0 +1,8 @@
+services:
+  redirect:
+    build: .
+    environment:
+      - PORT=8080
+      - REDIRECT_TO=https://example.com
+    ports:
+      - "8080:8080"
