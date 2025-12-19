@@ -3,6 +3,6 @@ services:
     build: .
     environment:
       - PORT=8080
-      - REDIRECT_TO=https://example.com
+      - REDIRECT_TO=https://shred.yerim-inc.com
     ports:
       - "8080:8080"

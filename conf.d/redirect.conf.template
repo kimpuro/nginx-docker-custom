@@ -5,7 +5,7 @@ server {
   server_name _;
 
   # 목적지 URL은 환경변수로 주입합니다 (예: https://new.example.com)
-  return 301 ${REDIRECT_TO}$request_uri;
+  return 301 ${REDIRECT_TO};
 }
 
 
